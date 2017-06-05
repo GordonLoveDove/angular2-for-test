@@ -1,0 +1,59 @@
+li {
+	
+}
+.table-container {
+	width:800px;
+	margin:0 auto;
+}
+.ebody {
+	margin:10px 5px;
+	border:1px solid #aaa;
+	padding:10px 20px;
+	border-radius:5px;
+}
+.ebody span {
+	font-size:20px;
+}
+.ebody span:last-of-type {
+	float:right;
+}
+.ebio {
+	margin:-10px 8px 0;
+	border:2px solid #f0ad4e;
+	border-top:none;
+	border-radius:0 0 5px 5px;
+	overflow:hidden;
+	transition:all 0.3s;
+	height:0px;
+	border-width:0
+}
+.ebio.open {
+	height:78px;
+	border-width:2px
+}
+.ebio div {
+	padding:10px
+}
+.ebio div span:last-of-type {
+	float:right;
+	margin-right:140px;
+}
+button {
+	background-color:#f0ad4e;
+	border-radius:3px;
+	color:#fff;
+	padding:5px 10px;
+	width:60px;
+	border:none;
+	cursor:pointer;
+	float:right;
+	margin-right:10px;
+	margin-top:-32px;
+}
+input {
+	width:100px;
+	padding:0 5px;
+	height:16px;
+	margin:0;
+	border:1px solid #CCC
+}

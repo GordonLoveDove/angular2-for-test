@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Employee List</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+  	html,body {
+		width:100%;
+		padding:0;
+		margin:0;
+		font-size:normal;
+		font-family: Arial,Helvetica,sans-serif;
+	}
+	ul {
+		list-style:none;
+		padding:0;
+		margin:0;
+	}
+	li {
+		
+	}
+	.table-container {
+		width:800px;
+		margin:0 auto;
+	}
+	.ebody {
+		margin:10px 5px;
+		border:1px solid #aaa;
+		padding:10px 20px;
+		border-radius:5px;
+	}
+	.ebody span {
+		font-size:20px;
+	}
+	.ebody span:last-of-type {
+		float:right;
+	}
+	.ebio {
+		margin:-10px 8px 0;
+		border:2px solid #f0ad4e;
+		border-top:none;
+		border-radius:0 0 5px 5px;
+		overflow:hidden;
+		transition:all 0.3s;
+		height:0px;
+		border-width:0
+	}
+	.ebio.open {
+		height:78px;
+		border-width:2px
+	}
+	.ebio div {
+		padding:10px
+	}
+	.ebio div span:last-of-type {
+		float:right;
+		margin-right:140px;
+	}
+	button {
+		background-color:#f0ad4e;
+		border-radius:3px;
+		color:#fff;
+		padding:5px 10px;
+		width:60px;
+		border:none;
+		cursor:pointer;
+		float:right;
+		margin-right:10px;
+		margin-top:-32px;
+	}
+  </style>
+</head>
+<body>
+	<div class="table-container">
+        <ul>
+            <li>
+                <div class="ebody">
+                    <span>001</span>
+                    <span>Lee</span>
+                </div>
+                <div class="ebio open">
+                	<div>
+                        <span>NAME:Lee</span>
+                        <span>AGE:28</span>
+                    </div>
+                    <div>
+                        <span>Entered the company in:2016-08-09</span>
+                        <span>SEX:male</span>
+                    </div>
+                    <button >Edit</button>
+                </div>
+            </li>
+            <li>
+                <div class="ebody">
+                    <span>002</span>
+                    <span>John</span>
+                </div>
+                <div class="ebio">
+                	<div>
+                        <span>NAME:John</span>
+                        <span>AGE:32</span>
+                    </div>
+                    <div>
+                        <span>Entered the company in:2017-01-24</span>
+                        <span>SEX:male</span>
+                    </div>
+                    <button>Edit</button>
+                </div>
+            </li>
+            <li>
+                <div class="ebody">
+                    <span>003</span>
+                    <span>Tom</span>
+                </div>
+                <div class="ebio">
+                	<div>
+                        <span>NAME:TOM</span>
+                        <span>AGE:29</span>
+                    </div>
+                    <div>
+                        <span>Entered the company in:2016-08-19</span>
+                        <span>SEX:male</span>
+                    </div>
+                    <button>Edit</button>
+                </div>
+            </li>
+            <li>
+                <div class="ebody">
+                    <span>004</span>
+                    <span>Linda</span>
+                </div>
+                <div class="ebio">
+                	<div>
+                        <span>NAME:Linda</span>
+                        <span>AGE:25</span>
+                    </div>
+                    <div>
+                        <span>Entered the company in:2016-11-14</span>
+                        <span>SEX:female</span>
+                    </div>
+                    <button>Edit</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

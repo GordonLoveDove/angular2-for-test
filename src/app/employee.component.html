@@ -1,0 +1,26 @@
+<div class="table-container">
+	<ul>
+        <li *ngFor="let employee of employees" >
+        	<div class="ebody" (click)="onSelect(employee)">
+                <span>{{employee.id}}</span>
+                <span>{{employee.name}}</span>
+            </div>
+            <div class="ebio" [class.open]="employee === selectedEmployee">
+            	<div>
+                    <span *ngIf="!employee.editable">NAME: {{employee.name}}</span>
+                    <span *ngIf="employee.editable">NAME: <input [(ngModel)]="employee.name"></span>
+                    <span *ngIf="!employee.editable">AGE: {{employee.age}}</span>
+                    <span *ngIf="employee.editable">AGE: <input [(ngModel)]="employee.age"></span>
+                </div>
+                <div>
+                    <span *ngIf="!employee.editable">Entered the company in: {{employee.joinDate}}</span>
+                    <span *ngIf="employee.editable">Entered the company in: <input [(ngModel)]="employee.joinDate"></span>
+                    <span *ngIf="!employee.editable">SEX: {{employee.sex}}</span>
+                    <span *ngIf="employee.editable">SEX: <input [(ngModel)]="employee.sex"></span>
+                </div>
+                <button *ngIf="!employee.editable" (click)="onEdit(employee)">Edit</button>
+                <button *ngIf="employee.editable" (click)="onSave(employee)">Save</button>
+            </div>
+        </li>
+    </ul>
+</div>
